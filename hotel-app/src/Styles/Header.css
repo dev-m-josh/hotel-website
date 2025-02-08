@@ -1,0 +1,101 @@
+/* Header.css */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  /* color: blue; */
+}
+
+header .header-details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+header .links {
+  display: flex;
+  gap: 20px;
+}
+
+header .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+header .nav-link:focus {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+/* Active link styling */
+header .nav-link.active {
+  color: #ff6347;
+  text-decoration: underline;
+  font-weight: bolder;
+
+}
+
+header .nav-link:hover {
+  color: #ff6347;
+}
+
+header .cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 22px;
+}
+
+header .cart-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+header .cart-signup {
+  display: flex;
+  gap: 15px;
+}
+
+header .signup-btn {
+  color: white;
+  background-color: #ec2b09;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header .signup-btn:hover {
+  background-color: #f7563a;
+}
+
+.signup-btn:focus {
+  outline: none;
+}

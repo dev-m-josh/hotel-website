@@ -8,10 +8,11 @@ function App() {
       <Header />
       <div className="App">
         <div className="page-content">
+          {/* Content of the page */}
         </div>
       </div>
     </>
   );
 }
 
-export default App
+export default App;
